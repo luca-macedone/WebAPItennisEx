@@ -4,16 +4,20 @@ namespace WebAPItennisEx.DTOs.Responses
 {
     public class BaseResponse
     {
-        public int status_code {  get; set; }
-        public object data { get; set; }
+        public int Status_code {  get; set; }
+        public object Data { get; set; }
+        public int? Current_page { get; set; }
+        public int? Result_count { get; set; }
 
         /// <summary></summary>    
         /// <param name="statusCode"></param>
         /// <param name="data"></param>
-        public void CreateResponse(HttpStatusCode statusCode, object data)
+        public void CreateResponse(HttpStatusCode statusCode, object data, int? current_page, int? result_count)
         {
-            status_code = (int)statusCode;
-            this.data = data;
+            Status_code = (int)statusCode;
+            Current_page = current_page;
+            Result_count = result_count;
+            this.Data = data;
         }
     }
 }

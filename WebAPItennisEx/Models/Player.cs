@@ -9,27 +9,27 @@ namespace WebAPItennisEx.Models
     {
         [Key]
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
-        public int player_id { get; set; }
+        public int Player_id { get; set; }
         
         [Required]
-        public string name_first { get; set; }
+        public string Name_first { get; set; }
         
         [Required]
-        public string name_last { get; set; }
+        public string Name_last { get; set; }
 
         [Required]
-        public string hand { get; set; }
+        public string Hand { get; set; }
 
         [MaybeNull]
-        public int? dob { get; set; }
+        public int? Dob { get; set; }
 
         [Required]
-        public string ioc { get; set; }
+        public string Ioc { get; set; }
 
         [MaybeNull]
-        public int? height { get; set; }
+        public int? Height { get; set; }
 
         [Required]
-        public string wikidata_id { get; set; }
+        public string Wikidata_id { get; set; }
     }
 }

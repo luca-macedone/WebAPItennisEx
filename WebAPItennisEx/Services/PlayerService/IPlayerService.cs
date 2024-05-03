@@ -8,6 +8,6 @@ namespace WebAPItennisEx.Services.PlayerService
 
         BaseResponse Player_GetById(int id);
 
-        BaseResponse Player_GetByName(string name);
+        BaseResponse Player_GetByName(string name, int index, int amount);
     }
 }

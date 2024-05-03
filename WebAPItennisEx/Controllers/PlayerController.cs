@@ -52,8 +52,8 @@ namespace WebAPItennisEx.Controllers
         /// List<Player>
         /// </returns>
         [HttpGet("{name}")]
-        public BaseResponse Player(string name) {
-            return playerService.Player_GetByName(name);
+        public BaseResponse Player(string name, int page_index = 1, int amount = 10) {
+            return playerService.Player_GetByName(name, page_index, amount);
         }
     }
 }
